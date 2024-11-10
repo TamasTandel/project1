@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "flag": "json",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev": "vite dev --host 0.0.0.0", 
+    "build": "vite build --host 0.0.0.0"  
+
   },
   "dependencies": {
     "ejs": "^3.1.10",
@@ -36,5 +39,7 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.8"
+  
+    
   }
 }
